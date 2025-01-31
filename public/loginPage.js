@@ -3,8 +3,6 @@
 let userForm = new UserForm();
 
 function loginCallback(response){
-    console.log(response);
-
     if(response.success){
         location.reload();
     } else {
@@ -17,7 +15,6 @@ userForm.loginFormCallback = function(data){
 };
 
 function registerCallback(response){
-    console.log(response);
     if(response.success){
         location.reload();
     } else {
